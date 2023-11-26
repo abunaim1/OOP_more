@@ -10,6 +10,9 @@ class Person:
     
     def exercise(self):
         raise NotImplementedError
+    
+    def dress(self):
+        raise NotImplementedError
 
 class Cricketer(Person):
     def __init__(self, name, age, height, weight, team) -> None:
@@ -35,11 +38,16 @@ class Cricketer(Person):
     def exercise(self):
         print('Gym a poisha hudai gham jhorai')
 
+    def dress(self):
+        print('jersy')
+
 sakib = Cricketer('Sakib Al Hasan', 33, 38, 66, 'BD')
 mushi = Cricketer('Mushfiqur Rahim', 30, 22, 44, 'BD')
 
-# sakib.eat()
-# sakib.exercise()
+sakib.eat()
+sakib.exercise()
+mushi.eat()
+mushi.dress()
 
 print(sakib > mushi)
 print(sakib * mushi)
